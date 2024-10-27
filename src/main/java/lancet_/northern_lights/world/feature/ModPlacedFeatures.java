@@ -19,27 +19,25 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     //public static final RegistryKey<PlacedFeature> HEATHER_PATCH_KEY = registerFeatureKey("heather_patch_placed");
-    public static final RegistryKey<PlacedFeature> HEATHER_KEY = registerFeatureKey("heather_placed");
 
-    public static void bootstrap(Registerable<PlacedFeature> context){
+
+    /*public static void bootstrap(Registerable<PlacedFeature> context){
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         NorthernLights.LOGGER.info("Adding Heather Patch to Placed Features");
         register(context, HEATHER_KEY, registryLookup.getOrThrow(ModConfiguredFeatures.HEATHER_KEY),
                 List.of(BlockFilterPlacementModifier.of(BlockPredicate.IS_AIR)));
-        /*register(context, HEATHER_PATCH_KEY, registryLookup.getOrThrow(ModConfiguredFeatures.HEATHER_PATCH_KEY),
-                Modifiers.modifiers(12));*/
-    }
+        register(context, HEATHER_PATCH_KEY, registryLookup.getOrThrow(ModConfiguredFeatures.HEATHER_PATCH_KEY),
+                Modifiers.modifiers(12));
+    }*/
 
-    private static RegistryKey<PlacedFeature> registerFeatureKey(String name){
-        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(name));
-    }
 
-    private static void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key,
+
+    /*private static void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key,
                                  RegistryEntry<ConfiguredFeature<?, ?>> config,
                                  List<PlacementModifier> modifierList){
         context.register(key, new PlacedFeature(config, List.copyOf(modifierList)));
     }
-    /*public static class Modifiers{
+    public static class Modifiers{
         public static List<PlacementModifier> modifiers(int count) {
             return List.of(CountPlacementModifier.of(count), SquarePlacementModifier.of(), PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of());
         }
