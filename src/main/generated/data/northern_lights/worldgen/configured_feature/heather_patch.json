@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 64,
+    "xz_spread": 10,
+    "y_spread": 4,
+    "feature": "northern_lights:heather"
+  }
+}

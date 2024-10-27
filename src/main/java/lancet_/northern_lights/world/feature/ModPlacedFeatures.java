@@ -1,29 +1,31 @@
 package lancet_.northern_lights.world.feature;
 
+import lancet_.northern_lights.NorthernLights;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.ConfiguredFeatures;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
-import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
 public class ModPlacedFeatures {
 
-    public static final RegistryKey<PlacedFeature> HEATHER_PATCH_KEY = registerFeatureKey("heather_patch");
+    public static final RegistryKey<PlacedFeature> HEATHER_PATCH_KEY = registerFeatureKey("heather_patch_placed");
+    public static final RegistryKey<PlacedFeature> HEATHER_KEY = registerFeatureKey("heather_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context){
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
-
+        NorthernLights.LOGGER.info("Adding Heather Patch to Placed Features");
+        register(context, HEATHER_KEY, registryLookup.getOrThrow(ModConfiguredFeatures.HEATHER_KEY),
+                List.of(BlockFilterPlacementModifier.of(BlockPredicate.IS_AIR)));
         register(context, HEATHER_PATCH_KEY, registryLookup.getOrThrow(ModConfiguredFeatures.HEATHER_PATCH_KEY),
                 Modifiers.modifiers(12));
     }

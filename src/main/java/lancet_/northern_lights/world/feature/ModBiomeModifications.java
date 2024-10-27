@@ -9,8 +9,8 @@ import net.minecraft.world.gen.GenerationStep;
 public class ModBiomeModifications {
     public static void load(){
         BiomeModifications.addFeature(
-                BiomeSelectors.includeByKey(BiomeKeys.MEADOW), GenerationStep.Feature.VEGETAL_DECORATION,
-                ModPlacedFeatures.HEATHER_PATCH_KEY
+                BiomeSelectors.tag(BiomeTags.IS_HILL), GenerationStep.Feature.VEGETAL_DECORATION,
+                ModPlacedFeatures.HEATHER_KEY
         );
     }
 }
