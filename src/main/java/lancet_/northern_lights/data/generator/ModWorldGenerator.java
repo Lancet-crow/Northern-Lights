@@ -23,6 +23,6 @@ public class ModWorldGenerator extends FabricDynamicRegistryProvider {
 
     @Override
     public String getName() {
-        return "World Generator";
+        return NorthernLights.MOD_ID;
     }
 }

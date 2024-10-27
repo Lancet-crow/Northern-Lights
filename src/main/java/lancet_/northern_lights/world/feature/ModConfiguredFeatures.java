@@ -13,7 +13,7 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> HEATHER_KEY = registerFeatureKey("heather");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> HEATHER_PATCH_KEY = registerFeatureKey("heather_patch");
+    //public static final RegistryKey<ConfiguredFeature<?, ?>> HEATHER_PATCH_KEY = registerFeatureKey("heather_patch");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context){
         NorthernLights.LOGGER.info("Adding Heather Patch to Configured Features");
@@ -23,12 +23,12 @@ public class ModConfiguredFeatures {
         );*/
         register(context, HEATHER_KEY, Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(
                 BlockStateProvider.of(ModBlocks.HEATHER)));
-        register(context, HEATHER_PATCH_KEY, Feature.FLOWER,
+        /*register(context, HEATHER_PATCH_KEY, Feature.FLOWER,
                 new RandomPatchFeatureConfig(
                         64, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.HEATHER)))
                 )
-        );
+        );*/
     }
 
     private static RandomPatchFeatureConfig createRandomPatchFeatureConfig(Block block, int tries) {

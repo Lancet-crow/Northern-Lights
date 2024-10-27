@@ -10,6 +10,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,7 +23,7 @@ public class NorthernLights implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModItems();
 		ModBiomeModifications.load();
-		//Registry.register(RegistryKeys.FEATURE, ModConfiguredFeatures.HEATHER_PATCH_KEY, Mo)
+		//Registry.register(RegistryKeys.FEATURE, ModConfiguredFeatures.HEATHER_KEY);
 	}
 
 	// Depends in fabric.mod.json: 		"farmersdelight": ">=1.21-2.1.9+refabricated"

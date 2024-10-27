@@ -8,8 +8,7 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModBiomeModifications {
     public static void load(){
-        BiomeModifications.addFeature(
-                BiomeSelectors.tag(BiomeTags.IS_HILL), GenerationStep.Feature.VEGETAL_DECORATION,
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.VEGETAL_DECORATION,
                 ModPlacedFeatures.HEATHER_KEY
         );
     }
