@@ -1,24 +1,29 @@
 package lancet_.northern_lights;
 
+import lancet_.northern_lights.block.ModBlocks;
+import lancet_.northern_lights.item.ModItems;
+import lancet_.northern_lights.world.feature.ModBiomeModifications;
+import lancet_.northern_lights.world.feature.ModConfiguredFeatures;
+import lancet_.northern_lights.world.feature.ModPlacedFeatures;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class NorthernLights implements ModInitializer {
 	public static final String MOD_ID = "northern_lights";
-
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModItems();
+		ModBiomeModifications.load();
+		//Registry.register(RegistryKeys.FEATURE, ModConfiguredFeatures.HEATHER_PATCH_KEY, Mo)
 	}
+
+	// Depends in fabric.mod.json: 		"farmersdelight": ">=1.21-2.1.9+refabricated"
 }

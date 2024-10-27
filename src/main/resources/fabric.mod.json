@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"lancet_.northern_lights.NorthernLightsDataGenerator"
+		],
+		"client": [
+			"lancet_.northern_lights.NorthernLightsClient"
 		]
 	},
 	"mixins": [
