@@ -18,6 +18,4 @@ public class NorthernLights implements ModInitializer {
 		ModBlocks.registerModItems();
 		ModBiomeModifications.load();
 	}
-
-	// Depends in fabric.mod.json: 		"farmersdelight": ">=1.21-2.1.9+refabricated"
 }

@@ -14,6 +14,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
@@ -27,6 +29,7 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.GRASS)
             .offset(AbstractBlock.OffsetType.XZ)
             .pistonBehavior(PistonBehavior.DESTROY)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(NorthernLights.MOD_ID, name), block);
@@ -40,8 +43,8 @@ public class ModBlocks {
     public static void registerModItems() {
         NorthernLights.LOGGER.info("Started registering blocks for mod " + NorthernLights.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.HEATHER);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(HEATHER);
         });
     }
 }
