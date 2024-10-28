@@ -2,7 +2,7 @@
 Hello, stranger! I am Lancet_, the developer of this little mod based on Nordic food. My main goal is to almost seamlessly integrate Nordic culture into Farmer's Delight.
 
 I've already added:
-- Heather(still not spawning)
+- Heather(Spawns in Meadow biome, pretty rare)
 - Heather Honey Bottle(cannot be crafted, will be fixed soon)
   
 **My plans for the future:**
