@@ -4,9 +4,10 @@ Hello, stranger! I am Lancet_, the developer of this little mod based on Nordic 
 I've already added:
 - Heather(Spawns in Meadow biome, pretty rare)
 - Heather Honey Bottle(craftable in Cooking Pot with Honey Bottle, Heather and Sugar, can be recycled to Sugar through Crafting Table)
+- Oat (You can't find it anywhere for now, but it will be fixed by adding Wild Oat soon. Also it's useless).
   
 **My plans for the future:**
-- Adding new plants: Oat, Lingonberry, Cranberry
+- Adding new plants: Lingonberry, Cranberry
 - Adding new drinks: Heather Ale, Fruit Wine, Mead, Cranberry Juice
 - Adding new salads: Beetroot Salad, Potato Salad, Salmon Salad
 - Adding new sweets: Carrot Pie, Oat Cookie, Trollkrem, Lingonberry Jam
