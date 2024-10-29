@@ -1,5 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "sugar",
   "ingredients": [
     {
       "item": "northern_lights:heather_honey_bottle"

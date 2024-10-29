@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_heather_honey_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "northern_lights:heather_honey_bottle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:sugar_from_heather_honey_bottle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_heather_honey_bottle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:sugar_from_heather_honey_bottle"
+    ]
+  }
+}
