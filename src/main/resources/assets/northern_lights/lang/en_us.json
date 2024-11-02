@@ -1,7 +1,10 @@
 {
+  "itemGroup.northern_lights.northern_lights_group": "Northern Lights",
   "item.northern_lights.heather_honey_bottle": "Heather Honey Bottle",
   "item.northern_lights.oat": "Oat",
+  "item.northern_lights.oat_dough": "Oat Dough",
   "item.northern_lights.oat_seeds": "Oat Seeds",
   "block.northern_lights.heather": "Heather",
-  "block.northern_lights.oat_crop": "Oat"
+  "block.northern_lights.oat_crop": "Oat",
+  "block.northern_lights.wild_oat": "Wild Oat"
 }

@@ -19,12 +19,13 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.OAT_CROP, Properties.AGE_7,
                 0, 1, 2, 3, 4, 5, 6, 7);
         blockStateModelGenerator.registerTintableCross(ModBlocks.HEATHER, BlockStateModelGenerator.TintType.TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.WILD_OAT, BlockStateModelGenerator.TintType.TINTED);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.HEATHER_HONEY_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.OAT, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.OAT_SEEDS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OAT_DOUGH, Models.GENERATED);
     }
 }

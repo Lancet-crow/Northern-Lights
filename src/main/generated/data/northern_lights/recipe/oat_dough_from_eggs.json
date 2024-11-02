@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "northern_lights:oat"
+    },
+    {
+      "item": "northern_lights:oat"
+    },
+    {
+      "item": "northern_lights:oat"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "northern_lights:oat_dough"
+  }
+}
