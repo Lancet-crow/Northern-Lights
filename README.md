@@ -2,9 +2,10 @@
 Hello, stranger! I am Lancet_, the developer of this little mod based on Nordic food. My main goal is to almost seamlessly integrate Nordic culture into Farmer's Delight.
 
 I've already added:
-- Heather(Spawns in Meadow biome, pretty rare)
-- Heather Honey Bottle(craftable in Cooking Pot with Honey Bottle, Heather and Sugar, can be recycled to Sugar through Crafting Table)
-- Oat (You can't find it anywhere for now, but it will be fixed by adding Wild Oat soon. Also it's useless).
+- Heather. Can be found in Meadow biome in small patches, pretty rare. Drops itself.
+- Heather Honey Bottle. Crafts in Cooking Pot from Farmer's Delight with Honey Bottle, Heather and Sugar. Has more saturation and nutrition than regular Honey Bottle. Can be recycled to 5 Sugar through Crafting Table.
+- Wild Oat(Can be found in Meadow biome, same as Heather, but more common). Drops Oat Seeds.
+- Oat and Oat Dough(analog of Wheat Dough from Farmer's Delight). Oat is still useless aside this recipe(of course will be fixed in the future).
   
 **My plans for the future:**
 - Adding new plants: Lingonberry, Cranberry
