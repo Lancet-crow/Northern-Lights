@@ -14,8 +14,9 @@ public class NorthernLights implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-		ModBlocks.registerModItems();
+		ModBlocks.registerModBlocks();
 		ModBiomeModifications.load();
 	}
 	/* fabric.mod.json "depends"

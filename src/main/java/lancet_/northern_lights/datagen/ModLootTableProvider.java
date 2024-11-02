@@ -20,6 +20,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.HEATHER);
+        addDrop(ModBlocks.WILD_OAT, ModItems.OAT_SEEDS);
         addDrop(ModBlocks.OAT_CROP, cropDrops(ModBlocks.OAT_CROP, ModItems.OAT, ModItems.OAT_SEEDS,
                 BlockStatePropertyLootCondition.builder(ModBlocks.OAT_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(CropBlock.AGE, 7))));
