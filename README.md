@@ -12,5 +12,6 @@ I've already added:
 - Adding new drinks: Heather Ale, Fruit Wine, Mead, Cranberry Juice
 - Adding new salads: Beetroot Salad, Potato Salad, Salmon Salad
 - Adding new sweets: Carrot Pie, Oat Cookie, Trollkrem, Lingonberry Jam
+- Retexturing all plants(because they're fucking ugly)
   
 **This is not a full list, it can and will be expanded. See you soon on Modrinth!**
