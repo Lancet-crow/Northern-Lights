@@ -26,6 +26,6 @@ public class ModItemGroups {
                     })).build());
 
     public static void registerItemGroups(){
-
+        NorthernLights.LOGGER.info("Created ItemGroup " + NORTHERN_LIGHTS_GROUP + " for mod " + NorthernLights.MOD_ID);
     }
 }

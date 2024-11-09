@@ -51,7 +51,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        NorthernLights.LOGGER.info("Started registering blocks for mod " + NorthernLights.MOD_ID);
+
     }
 
     private static SuspiciousStewEffectsComponent createStewEffects(SuspiciousStewEffectsComponent.StewEffect ... effects){
