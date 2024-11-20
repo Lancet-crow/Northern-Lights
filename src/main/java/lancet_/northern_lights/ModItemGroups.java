@@ -14,7 +14,7 @@ public class ModItemGroups {
 
     public static final ItemGroup NORTHERN_LIGHTS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(NorthernLights.MOD_ID, "northern_lights_group"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.OAT))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.HEATHER.asItem()))
                     .displayName(Text.translatable("itemGroup.northern_lights.northern_lights_group"))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModBlocks.HEATHER);
