@@ -1,6 +1,7 @@
 package lancet_.northern_lights.block;
 
 import lancet_.northern_lights.NorthernLights;
+import lancet_.northern_lights.block.custom.CranberryBushBlock;
 import lancet_.northern_lights.block.custom.OatCropBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -38,7 +39,12 @@ public class ModBlocks {
                     .pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block OAT_CROP = Registry.register(Registries.BLOCK,
-            Identifier.of(NorthernLights.MOD_ID, "oat_crop"), new OatCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+            Identifier.of(NorthernLights.MOD_ID, "oat_crop"),
+            new OatCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+
+    public static final SweetBerryBushBlock CRANBERRY_BUSH = Registry.register(Registries.BLOCK,
+            Identifier.of(NorthernLights.MOD_ID, "cranberry_bush"),
+            new CranberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.OAT_DOUGH);
                         entries.add(ModItems.OAT_SEEDS);
                         entries.add(ModBlocks.WILD_OAT);
+                        entries.add(ModItems.CRANBERRIES);
                     })).build());
 
     public static void registerItemGroups(){
