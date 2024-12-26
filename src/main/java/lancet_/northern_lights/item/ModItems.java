@@ -2,6 +2,7 @@ package lancet_.northern_lights.item;
 
 import lancet_.northern_lights.NorthernLights;
 import lancet_.northern_lights.block.ModBlocks;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -18,6 +19,9 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.OAT_CROP, new Item.Settings()));
     public static final Item OAT_DOUGH = registerItem("oat_dough",
             new Item(new Item.Settings().food(ModFoodComponents.DOUGH_DEFAULT)));
+
+    public static final Item CRANBERRIES = registerItem("cranberries",
+            new AliasedBlockItem(ModBlocks.CRANBERRY_BUSH, new Item.Settings().food(ModFoodComponents.CRANBERRIES)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(NorthernLights.MOD_ID, name), item);

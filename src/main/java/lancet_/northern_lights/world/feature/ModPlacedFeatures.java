@@ -10,6 +10,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> HEATHER_PLACED_KEY = registerPlacedFeatureKey("heather_placed");
     public static final RegistryKey<PlacedFeature> WILD_OAT_PLACED_KEY = registerPlacedFeatureKey("wild_oat_placed");
 
+    public static final RegistryKey<PlacedFeature> PATCH_CRANBERRY_BUSH_PLACED_KEY = registerPlacedFeatureKey("patch_cranberry_bush_placed");
+
     private static RegistryKey<PlacedFeature> registerPlacedFeatureKey(String name){
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(NorthernLights.MOD_ID, name));
     }
