@@ -5,7 +5,6 @@ import lancet_.northern_lights.block.custom.CranberryBushBlock;
 import lancet_.northern_lights.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
 

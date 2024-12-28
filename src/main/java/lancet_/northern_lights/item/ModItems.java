@@ -2,7 +2,6 @@ package lancet_.northern_lights.item;
 
 import lancet_.northern_lights.NorthernLights;
 import lancet_.northern_lights.block.ModBlocks;
-import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
